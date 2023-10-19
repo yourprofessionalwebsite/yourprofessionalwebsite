@@ -1,61 +1,94 @@
+
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>maintenance</title>
-    <style media="screen">
-        body,  {
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References Ghana</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
 
-        div {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-
-          font-size: 20px;
-
+        .iframe-container {
+            width: 100%;
+            height: 100%;
         }
 
-        /* Media query for screens with a maximum width of 768px (typical for tablets and smaller screens) */
-        @media screen and (max-width: 768px) {
-            body {
-                /* Adjust styles for smaller screens */
-                /*height: 100vh;*/
-            }
-
-            h3 {
-                margin: 0;
-                font-size: 600px; /* Increase text size for better readability */
-            }
-
-            p {
-                font-size: 340px; /* Increase text size for better readability */
-            }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Optional: Remove iframe border */
         }
+
+        div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 25px;
+  background-color: white;
+  border: 3px solid white;
+
+  /* Center the paragraph both horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div.fixed p {
+  /* Additional styling for the paragraph */
+  text-align: center; /* Center the text horizontally */
+  margin: 0; /* Remove default margin for the paragraph */
+  color: #16A34A;
+}
     </style>
-    <script>
-        // JavaScript code for the clock (unchanged)
-        function updateClock() {
-            const clock = document.getElementById("clock");
-            const currentTime = new Date();
-            const hours = currentTime.getHours().toString().padStart(2, "0");
-            const minutes = currentTime.getMinutes().toString().padStart(2, "0");
-            const seconds = currentTime.getSeconds().toString().padStart(2, "0");
-            clock.textContent = `${hours}:${minutes}:${seconds}`;
-        }
 
-        setInterval(updateClock, 1000);
-        updateClock();
-    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3106356182336547"
+         crossorigin="anonymous"></script>
 </head>
 <body>
-  <div>
-    <h3>This website is under maintenance, file transfer underway, ETA(2:30:00, SAT, 30 Sept, 2023)...</h3>
-    <p id="clock">12:00:00</p>
-  </div>
+  <!--  <h1>Enter Your Special Code</h1>
+
+    <form id="authentication-form">
+        <input type="text" id="special-code" placeholder="Special Code">
+        <button type="button" id="submit-button">Submit</button>
+    </form>
+
+    <script>
+        // Replace this array with your list of special codes
+        let specialCodes = ['code1', 'code2', 'code3'];
+
+        const submitButton = document.getElementById("submit-button");
+        const specialCodeInput = document.getElementById("special-code");
+
+        submitButton.addEventListener("click", function () {
+            const enteredCode = specialCodeInput.value.trim();
+
+            if (specialCodes.includes(enteredCode)) {
+                // Remove the used code from the array
+                specialCodes = specialCodes.filter(code => code !== enteredCode);
+
+                // Redirect to the ticket generation page
+                window.location.href = "ticketgenerator.html";
+            } else {
+                alert("Invalid special code. Please try again.");
+            }
+        });
+    </script>
+-->
+
+<div class="iframe-container">
+    <iframe src="https://store1511.store.link"></iframe>
+    <div class="fixed">
+      <p><b><a href="map.html">SEND DELIVERY LOCATION(for GNSS equipment)</a></b></p>
+    </div>
+</div>
+
 </body>
 </html>
