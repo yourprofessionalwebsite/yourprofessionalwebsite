@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>maintenance</title>
+    <style media="screen">
+        body,  {
+
+
+
+        }
+
+        div {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          font-size: 20px;
+
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for tablets and smaller screens) */
+        @media screen and (max-width: 768px) {
+            body {
+                /* Adjust styles for smaller screens */
+                /*height: 100vh;*/
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 600px; /* Increase text size for better readability */
+            }
+
+            p {
+                font-size: 340px; /* Increase text size for better readability */
+            }
+        }
+    </style>
+    <script>
+        // JavaScript code for the clock (unchanged)
+        function updateClock() {
+            const clock = document.getElementById("clock");
+            const currentTime = new Date();
+            const hours = currentTime.getHours().toString().padStart(2, "0");
+            const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+            const seconds = currentTime.getSeconds().toString().padStart(2, "0");
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</head>
+<body>
+  <div>
+    <h3>This website is under maintenance, file transfer underway, ETA(2:30:00, SAT, 30 Sept, 2023)...</h3>
+    <p id="clock">12:00:00</p>
+  </div>
+</body>
+</html>
